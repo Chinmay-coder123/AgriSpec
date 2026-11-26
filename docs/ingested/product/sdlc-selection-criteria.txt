@@ -1,0 +1,16 @@
+AgriTech SDLC selection criteria.
+
+Stable requirements and extensive approvals, such as a fixed government tender with a signed specification -> Waterfall.
+Safety-relevant hardware or automated action with strict verification and validation, such as drones, automated spraying, valve or pump actuation -> V-Model.
+High technical, hardware, sensor-accuracy, or field uncertainty that must be reduced step by step -> Spiral.
+Unclear farmer needs that must be discovered by showing working versions in the field -> Prototype (evolutionary prototyping).
+Frequently changing workflows and strong feedback from farmers and field staff, low harm from errors -> Agile with explicit safety and security gates.
+Continuous secure deployment and operational monitoring of a cloud platform -> DevSecOps.
+Regulated, data-heavy platforms with evolving needs and fixed crop-season release windows -> named hybrid such as season-gated iterative delivery plus verification gates and DevSecOps controls.
+
+Decision factors to extract from a specification before choosing:
+requirement stability; seasonality and fixed crop-calendar deadlines; harm from wrong output (crop loss, chemical misuse, drone safety, credit or insurance impact on a farmer's livelihood); regulatory and privacy criticality; security risk; hardware and IoT dependence; connectivity and offline needs; interoperability with government digital services and legacy systems; availability of farmers, FPO staff, and extension officers for feedback; frequency of expected changes; need for continuous delivery; testing and documentation formality; budget and schedule constraints; need for formal verification; consequences of failure during a critical season.
+
+Produce a recommendation with justification, then a project-specific workflow: phases, activities, roles, deliverables, security activities, testing including field pilots, compliance checkpoints, human-approval gates, entry and exit criteria, traceability.
+
+Important agri-specific point: a missed crop season can cost a full year of farmer income, so release plans should be tied to the crop calendar (for example kharif and rabi sowing and harvest windows) rather than to arbitrary sprint dates.

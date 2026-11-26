@@ -1,0 +1,7 @@
+.env
+.mastra
+artifacts
+node_modules
+agrispec.db
+agrispec.db-shm
+agrispec.db-wal
