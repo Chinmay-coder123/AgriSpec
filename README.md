@@ -11,18 +11,8 @@ It uses two specialised AI agents chained in a workflow, a small searchable libr
 
 ## How it works
 
-```
-Browser (public/)  --POST /api/analyze-->  src/app/server.ts
-                                              |
-                                              v
-                          Mastra workflow: requirements-then-sdlc
-        Step 1  AgriTech Requirements Agent  (Agent i)   <-- RAG evidence
-        Step 2  AgriTech SDLC Selection Agent (Agent ii) <-- RAG evidence
-        Step 3  Save artifacts/evaluation/latest.md and latest.html
-                                              |
-                                              v
-                                    LM Studio (local model)
-```
+<img width="795" height="849" alt="image" src="https://github.com/user-attachments/assets/dd47f77e-df84-4f58-a5f1-83c8b1c91798" />
+
 
 | Piece | File | Role |
 |---|---|---|
